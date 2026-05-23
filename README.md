@@ -10,6 +10,8 @@
   <em><b>Figure 1.</b> Illustration of the single-model jailbreak scenario and the wide-net-casting jailbreak scenario.</em>
 </p>
 
+---
+
 ### ⚙️ Requirements
 
 To install requirements:
