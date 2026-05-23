@@ -604,10 +604,6 @@ class GroupWorkspace:
             loss_params=dict(hard_labels=True),
         )
         
-        # if self.epoch != 0: # TODO
-        #     awta_weights = self.sync_loss_opt_across_ranks(loss_opt)
-        # else:
-        #     awta_weights = torch.ones_like(prompter_tf_opt.loss_batch, device=self.prompter.device)
 
         awta_weights = self.sync_loss_opt_across_ranks(loss_opt)
 

@@ -28,8 +28,8 @@ class LLM(nn.Module):
             if self.tokenizer.unk_token is not None:
                 self.tokenizer.pad_token = self.tokenizer.unk_token
             else:
-                # TODO: This is a hack I added because Falcon-7b-isntruct doe snot have a pad token
-                # We might run into trouble here because the Seq class will automatically treat any eos_token as a pad_token and set the padding mask to 0 for this token
+                # Workaround for tokenizers without a pad_token (e.g. Falcon-7b-instruct).
+                # Note: Seq treats any eos_token as a pad_token, so padding masks may be 0 here.
                 self.tokenizer.pad_token = self.tokenizer.eos_token
 
         self.device = self.model.device
