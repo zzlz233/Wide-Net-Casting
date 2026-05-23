@@ -10,8 +10,6 @@
   <em><b>Figure 1.</b> Illustration of the single-model jailbreak scenario and the wide-net-casting jailbreak scenario.</em>
 </p>
 
----
-
 ### ⚙️ Requirements
 
 To install requirements:
@@ -21,8 +19,6 @@ conda create -n widenet python=3.11 -y
 conda activate widenet
 pip install -r requirements.txt
 ```
-
----
 
 ### 🚀 Training
 
@@ -40,8 +36,6 @@ bash scripts/train_group_2gpu_test.sh
 
 The default configuration attacks four target LLMs (`Llama-2-7b-chat`, `Vicuna-7b-v1.5`, `Mistral-7B-Instruct-v0.2`, `Vicuna-13b-v1.5`) with `Llama-2-7b` as the prompter base. To attack a subset, edit `conf/train_group.yaml` and remove the corresponding entries from `branches:`.
 
----
-
 ### 📂 Outputs
 
 Each run writes to `res_group/<jobname>/<branch>_rank<N>/`:
@@ -50,13 +44,9 @@ Each run writes to `res_group/<jobname>/<branch>_rank<N>/`:
 - `suffix_opt_dataset/` — adversarial suffixes optimized during training
 - `suffix_dataset/` — adversarial suffix dataset generated on the evaluation splits
 
----
-
 ### 🤝 Acknowledgements
 
 Our code is based on [AdvPrompter](https://github.com/facebookresearch/advprompter) ([license](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)) and the [ReMiss](https://arxiv.org/abs/2406.14393) codebase.
-
----
 
 ### 📖 Citation
 
