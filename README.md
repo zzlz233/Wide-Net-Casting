@@ -57,7 +57,7 @@ Each run writes to `res_group/<jobname>/<branch>_rank<N>/`:
 
 ### 🛡️ Disclaimer
 
-This repository contains adversarial prompts and harmful examples. Released for safety research only — not for malicious use.
+This repository contains adversarial prompts and harmful examples. Released for safety research only.
 
 ## Credits
 
