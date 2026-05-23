@@ -3,7 +3,7 @@
 🎉 **Good news — our paper has been accepted to ICML 2026!** This is the official implementation. Visit our [project page](https://zzlz233.github.io/Wide-net-casting/) for paper, results, and more details.
 
 <p align="center">
-  <img src="Fig1.png" alt="Figure 1: Illustration of the single-model jailbreak scenario and the wide-net-casting jailbreak scenario." width="100%">
+  <img src="Fig1.png" alt="Figure 1: Illustration of the single-model jailbreak scenario and the wide-net-casting jailbreak scenario." width="80%">
 </p>
 
 <p align="center">
