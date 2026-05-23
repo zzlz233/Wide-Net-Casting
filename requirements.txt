@@ -1,0 +1,30 @@
+# Smoke-tested on RTX 6000 Ada (48GB), Python 3.11.
+# Differences from the original development setup:
+#   - transformers bumped 4.39.3 -> 4.45.0 (required by Gemma2ForCausalLM
+#     imported in src/utils.py; also covers Llama-3.x configs if you re-add them).
+#   - tokenizers pinned to 0.20.3 (paired with transformers 4.45.0).
+# All other pins inherited from the original requirements as-is.
+
+ase==3.22.1
+accelerate==0.25.0
+datasets==2.18.0
+fschat==0.2.36
+hydra-core==1.3.2
+ipython==8.23.0
+matplotlib==3.8.4
+numpy==1.26.4
+torch==2.1.2
+tensordict==0.2.0
+omegaconf==2.3.0
+peft==0.10.0
+pytorch_lightning==2.2.2
+sentencepiece==0.2.0
+setproctitle==1.3.3
+torchrl==0.2.1
+torch_optimizer==0.3.0
+tqdm==4.66.2
+tokenizers==0.20.3
+transformers==4.45.0
+wandb==0.16.6
+hydra-submitit-launcher==1.2.0
+openai==1.30.5

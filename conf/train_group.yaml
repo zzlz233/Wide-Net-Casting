@@ -1,0 +1,27 @@
+defaults:
+  - train
+  - _self_
+
+# Override mode
+mode: train
+
+# Branches: one per rank, consumed in order by GPU index
+train_group:
+  branches:
+    - name: "llama2"
+      prompter: "llama2"
+      target_llm: "llama2_chat"
+      
+    - name: "vicuna"
+      prompter: "llama2" 
+      target_llm: "vicuna_chat"
+
+      
+    - name: "mistral"
+      prompter: "llama2"
+      target_llm: "mistral_chat" 
+      
+    - name: "vicuna_chat_13b"
+      prompter: "llama2"
+      target_llm: "vicuna_chat_13b"
+

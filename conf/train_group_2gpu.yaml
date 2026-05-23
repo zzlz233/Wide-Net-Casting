@@ -1,0 +1,15 @@
+defaults:
+  - train
+  - _self_
+
+mode: train
+
+train_group:
+  branches:
+    - name: "llama2"
+      prompter: "llama2"
+      target_llm: "llama2_chat"
+
+    - name: "vicuna"
+      prompter: "llama2"
+      target_llm: "vicuna_chat"
